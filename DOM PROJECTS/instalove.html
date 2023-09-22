@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INSTA LOVE REACT</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+       <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: 'montserrat';
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightseagreen;
+        }
+        .container{
+            height: 450px;
+            width: 330px;
+            background-color: white;
+            border-radius: 20px; 
+            position: relative;
+            overflow: hidden;
+        }
+        .container img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;     
+        }
+        .container i{
+           color: white;
+            position: absolute;
+            font-size: 75px;
+            top: 45%;
+            left: 38%;
+            transform: translate(-50% -50%) scale(0);
+            opacity: 0;
+            transition: transform ease 0.5s;
+        }
+       
+   
+       </style>
+
+    </head>
+    <body>
+        <div class="container">
+      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+      <i class="ri-heart-3-fill"></i>
+         
+        
+            </div>
+     
+
+       <script >
+    var cont =  document.querySelector(".container");
+    var love = document.querySelector("i");
+
+    cont.addEventListener("dblclick",function(){
+        love.style.transform='translate(-50% -50%) scale(1)';
+        love.style.opacity=0.8;
+
+        setTimeout(function(){
+            love.style.opacity=0;
+        },1000)
+
+        setTimeout(function(){
+            love.style.transform='translate(-50% -50%) scale(0)';
+        },2000)
+    })
+       
+       </script> 
+    
+
+      
+
+    </body>
+</html>

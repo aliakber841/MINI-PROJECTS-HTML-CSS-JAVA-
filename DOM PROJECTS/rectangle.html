@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RECTANGLE</title>
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: 'montserrat';
+        }
+        .rectangle{
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            height: 140px;
+            width: 120px;
+            background-color: red;
+        }
+       
+       
+       </style>
+    </head>
+    <body>
+     <div class="main">
+        <div class="rectangle">
+      
+        </div>
+     </div>
+     
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script >
+       window.addEventListener("mousemove",function(dets){
+        var rect= document.querySelector(".rectangle");
+
+      var xval= gsap.utils.mapRange(
+        0,
+        window.innerWidth,
+        100+ rect.getBoundingClientRect().width/2,
+        window.innerWidth- (100+ rect.getBoundingClientRect().width/2),
+        dets.clientX
+      );
+      gsap.to(".rectangle",{
+        left: xval,
+        ease:Power3
+      })
+       });
+      
+       </script> 
+    
+
+      
+
+    </body>
+</html>

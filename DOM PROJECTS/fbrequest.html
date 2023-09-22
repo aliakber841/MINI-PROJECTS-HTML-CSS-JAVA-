@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FRIEND REQUEST</title>
+       <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: 'montserrat';
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: cornflowerblue;
+        }
+        .request{
+            height: 450px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        img{
+        height: 180px;
+        width: 250px;
+        object-fit: cover;
+        object-position: center;
+       border-radius: 20px;   
+    }
+    .name{
+       font-size: 30px;
+       margin-top: 20px;
+    }
+    .status{
+       font-size: 25px;
+       color: red;
+       margin: 25px;
+    }
+    .add-btn{
+        padding: 17px 20px;
+        color: white;
+        background-color: blue;
+        font-size: 25px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+       </style>
+    </head>
+    <body>
+        <div class="request">
+          <img src="https://wallpapers.com/images/featured/aesthetic-animals-rl5797xvni9r2l39.webp">
+          <h1 class="name">CATS GROUP</h1>
+          <h1 class="status">STRANGERS</h1>
+          <button class="add-btn">ADD FRIEND</button>
+            </div>
+     
+
+       <script >
+        var flag=0;
+       var istatus=document.querySelector(".status");
+     var addbtn=document.querySelector(".add-btn");
+  
+     addbtn.addEventListener("click",function(){
+        if(flag===0){
+       istatus.innerHTML="FRIENDS";
+        istatus.style.color="green";
+        addbtn.innerHTML="Remove Friend";
+        flag=1;
+        } else{
+      istatus.innerHTML="STRANGERS";
+        istatus.style.color="red";
+        addbtn.innerHTML="Add Friend"
+        flag=0;
+        }
+       
+     })
+       </script> 
+    
+
+      
+
+    </body>
+</html>
