@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: #397a79 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.panel{
+    height: 85vh;
+    width: 80vw;
+   /* background-color: #049993; */
+   background-color: aliceblue;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.panel-top{
+    height: 100px;
+    width: 100%;
+    background-color: #197472;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30%;
+    color: white;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.box{
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #055C58;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+    padding: 10px;
+}
+.panel-bottom{
+    height: calc(100% -(100px));
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   flex-wrap: wrap;
+   border-top: 2px solid #055C58;
+}
+.bubble{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #177a77;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    padding: 15px 15px;
+}
+.bubble:hover{
+  background-color: #055C58;
+  cursor: pointer;
+}
+.panel-bottom h1{
+    text-align: center;
+    color: #197472;
+    padding-top: 140px;
+}
