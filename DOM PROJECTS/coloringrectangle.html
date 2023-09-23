@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RECTANGLE</title>
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            font-family: 'montserrat';
+        }
+        .rectangle{
+            position: fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            height: 200px;
+            width: 300px;
+           border: 2px solid black;
+        }
+       
+       
+       </style>
+    </head>
+    <body>
+     <div class="main">
+        <div class="rectangle">
+      
+        </div>
+     </div>
+     
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script >
+
+            var rect = document.querySelector(".rectangle");
+            rect.addEventListener("mousemove",function(dets){
+           var rectlocation = rect.getBoundingClientRect();
+           var insiderect = dets.clientX-rectlocation.left;
+
+           if(insiderect < rectlocation.width/2){
+            var redcolor= gsap.utils.mapRange(0,
+            rectlocation.width/2,
+            255,
+            0,
+            insiderect);
+            gsap.to(rect,{
+                backgroundColor: `rgb(${redcolor},0,0)`,
+                ease: Power4,
+            });
+           } else{
+            var bluecolor = gsap.utils.mapRange(rectlocation.width/2,
+            rectlocation.width,
+            0,
+            255,
+            insiderect);
+            gsap.to(rect,{
+                backgroundColor:`rgb(0,0,${bluecolor})`,
+                ease:Power4
+            });
+           }
+            });
+            rect.addEventListener("mouseleave",function(){
+                gsap.to(rect,{
+                    backgroundColor:"white",
+                })
+            })
+        
+      
+      
+       </script> 
+    
+
+      
+
+    </body>
+</html>
