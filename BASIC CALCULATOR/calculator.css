@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: "General Sans";
+    background-image: url(https://media.istockphoto.com/id/830132520/photo/shape-wallpapaer.jpg?s=612x612&w=0&k=20&c=LNEyU0nU22xsfBD_OXqLy8LT9oKTacezL-sNUCe9J_U=);
+    background-size: cover;
+} 
+p{
+    margin-top: 10px;
+}
+main{
+  transform: translate(200%,30%);
+  height: 400px;
+  width: 20%;
+  background-color: #110D8F;
+  border-radius: 25px;
+}
+.calculation{
+    color: white;
+    font-size: 35px;
+}
+.js-cal{
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.calculator-button{
+    color: white;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    font-size: 26px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-left: 5px;
+}
+.button-no{
+    background-color: rgb(51,51,51);
+    color: white;  
+}
+.button-no>span,
+.operation-button>span{
+    position: relative;
+    z-index: 1;
+}
+.reset-button{
+    background-color: rgb(51,51,51);
+    font-size: 20px;
+}
+.operation-button{
+    background-color: rgb(254, 160, 10);
+    color: white;
+}
+.button-no::before,
+.operation-button::before{
+    content: "";
+    position: absolute;
+    background-color: #222222;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    transition: width 0.5s,height 0.5s;
+   left: var(--xPos);
+    top : var(--yPos);
+    height: 0;
+    width: 0;
+}
+.operation-button::before{
+    background-color: rgba(228, 115, 23, 0.938);
+}
+.button-no:hover::before,
+.operation-button:hover::before{
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+
+       <link rel="stylesheet" href="calculator.css">
+    </head>
+   
+    <body>
+      
+    <main>
+        <p class="js-cal calculation"></p>
+        
+        <p>
+            <button class="button-no calculator-button"  onclick="
+          updateCalculation('1');
+            "><span>1</span>
+        </button>
+
+        <button class="button-no calculator-button" onclick="
+        updateCalculation('2');
+        "><span>2</span>
+    </button>
+
+    <button class="button-no calculator-button" onclick="
+    updateCalculation('3');
+    "><span>3</span>
+</button>
+
+<button class="operation-button calculator-button"  onclick="
+    updateCalculation('+');
+    "><span>+</span>
+</button>
+        </p>
+       
+        <p>
+            <button class="button-no calculator-button" onclick="
+           updateCalculation('4');
+            "><span>4</span>
+        </button>
+
+        <button class="button-no calculator-button" onclick="
+        updateCalculation('5');
+        "><span>5</span>
+    </button>
+
+    <button class="button-no calculator-button" onclick="
+    updateCalculation('6');
+    "><span>6</span>
+</button>
+
+<button class="operation-button calculator-button" onclick="
+    updateCalculation('-');
+    "><span>-</span>
+</button>
+
+
+        </p>
+
+        <p>
+            <button class="button-no calculator-button" onclick="
+           updateCalculation('7');
+            "><span>7</span>
+        </button>
+
+        <button class="button-no calculator-button" onclick="
+        updateCalculation('8');
+        "><span>8</span>
+    </button>
+
+    <button class="button-no calculator-button" onclick="
+   updateCalculation('9');
+    "><span>9</span>
+</button>
+<button class="operation-button calculator-button" onclick="
+    updateCalculation('*');
+    "><span>*</span>
+</button>
+<p>
+    <button class="button-no calculator-button" onclick="
+    updateCalculation('0');
+    "><span>0</span>
+</button>
+
+<button class="button-no calculator-button" onclick="
+ updateCalculation('.');
+"><span>.</span>
+</button>
+
+<button class="button-no calculator-button" onclick="
+    calculation= eval(calculation);
+    displaycalculation();
+    localStorage.setItem('Calculation',calculation);
+    "><span>=</span>
+</button>
+
+<button class="operation-button calculator-button " onclick="
+ updateCalculation('/');
+"><span>/</span>
+</button>
+
+        </p>
+        <p>
+            <button class="reset-button calculator-button button-no" onclick="
+    calculation= '';
+    displaycalculation();
+    localStorage.setItem('Calculation',calculation);
+    ">  <span>AC</span>
+</button>
+        
+       
+    </p>
+    </main>
+
+  
+<script src="calculator.js"></script>
+    </body>
+</html>
