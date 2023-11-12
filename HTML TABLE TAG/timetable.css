@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: General Sans,Calibri;
+}
+.section{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.section-container{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.timetable-container{
+    position: relative;
+    height: 85vh;
+    width: 80vw;
+    background-color: rgb(126, 10, 10);
+    margin: 40px;
+    margin-top: 0;
+    margin-left: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.day-div{
+    background-color: rgb(0, 0, 0);
+    height: 17vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.day-div>h3{
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 350px;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+  border: 1px solid grey;
+}
+.sub{
+   width: 61rem;
+   margin-left: 20px;
+   color: white;
+   font-size: 50px;
+   border: 1px solid rgb(192, 179, 179);
+   overflow: hidden;
+   font-weight: 400;
+}
+.day1{
+    width: 45.73rem;
+}
+.manage{
+    background-color: rgb(31, 83, 76);
+}
+.pak{
+    background-color: #013F1B;
+}
+.se{
+    background-color: #112E61;
+}
+.day2{
+    width: 184rem;
+    overflow: hidden;
+}
+.day3{
+    width: 92rem;
+    overflow: hidden;
+}
+.cn{
+    background-color: #359487;
+}
+.cn-lab{
+   background-color: #ce9f32;
+}
+.dsa{
+    background-color: #741930;
+}
+.tech{
+    background-color: #5d7530;
+}
+.dsa-lab{
+    background-color: rgb(170, 124, 26);
+}
+.text-container{
+    height: 100%;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    font-size: 51px;
+    margin-left: 50px;
+}
+.manage-text{
+    color: rgb(31, 83, 76);
+}
+.pak-text{
+    color: #013F1B;
+}
+.se-text{
+    color: #112E61;
+}
+.dsa-lab-text{
+    color: rgb(170, 124, 26);
+}
+.cn-text{
+    color: #359487;
+}
+.dsa-text{
+    color: #741930;
+}
+.tech-text{
+    color: #5d7530;
+}
+.cn-lab-text{
+    color: #ce9f32;
+}
