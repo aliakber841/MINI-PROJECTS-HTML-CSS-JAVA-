@@ -9,3 +9,26 @@ https://aliakber841-todo-list.netlify.app/
 
 ⭐ ROCK PAPER SCISSORS
 https://aliakber841-rock-paper-scissor.netlify.app/
+
+⭐ DOM PROJECTS
+
+✅ CUSTOM CURSOR
+https://aliakber841-custom-cursor.netlify.app/
+
+✅ COLORING RECTANGLE
+https://aliakber841-coloring-rectangle.netlify.app/
+
+✅ INSTAGRAM STORIES
+https://aliakber841-instagram-stories.netlify.app/
+
+✅ FACEBOOK REQUEST
+https://aliakber841-facebook-request.netlify.app/
+
+✅ INSTAGRAM LOVE REACT
+https://aliakber841-instagram-love-react.netlify.app/
+
+✅ DIV ANIMATION
+https://aliakber841-div-animation.netlify.app/
+
+✅ MOVING RECTANGLE
+https://aliakber841-moving-rectangle.netlify.app/
