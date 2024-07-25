@@ -12,6 +12,9 @@ body{
     background-image: url(https://media.istockphoto.com/id/830132520/photo/shape-wallpapaer.jpg?s=612x612&w=0&k=20&c=LNEyU0nU22xsfBD_OXqLy8LT9oKTacezL-sNUCe9J_U=);
     background-size: cover;
 } 
+.first-row{
+    padding-top: 18px;
+}
 p{
     margin-top: 10px;
 }
@@ -24,7 +27,8 @@ main{
 }
 .calculation{
     color: white;
-    font-size: 35px;
+     font-size: 35px;
+    padding-top: 20px;
 }
 .js-cal{
     color: white;
@@ -32,12 +36,12 @@ main{
     margin-top: 20px;
 }
 .calculator-button{
-    color: white;
-    height: 60px;
-    width: 60px;
+   color: white;
+    height: 50px;
+    width: 50px;
     border: none;
-    border-radius: 30px;
-    font-size: 26px;
+    border-radius: 25px;
+    font-size: 22px;
     cursor: pointer;
     overflow: hidden;
     position: relative;
