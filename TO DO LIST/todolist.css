@@ -10,17 +10,19 @@ body{
  background-size: cover;
 }
 .page-container{
-    margin-left: 30rem;
+      margin-left: 30rem;
     margin-top: 5rem;
     background-color: #A0EA8B;
-    width: 35%;
+    width: 40%;
     height: auto;
+    padding-bottom: 20px;
 }
 .todo-text{
     font-size: 30px;
     font-weight: bolder;
    padding-left: 190px;
    margin-bottom: 20px;
+    padding-top: 10px;
 }
 .todo-grid,
 .todo-input-grid{
